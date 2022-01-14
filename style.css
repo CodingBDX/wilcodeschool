@@ -10,6 +10,12 @@ body {
     float:right !important;
     font-size: 1.2em !important;
 }
+/* section about background */
+#about, #family {
+    background-image: linear-gradient(to bottom, #f0133b, #ef123f, #ee1144, #ec1148, #eb124c);
+}
+
+
 /* image size of page the royal family */
 .card-img-top {
     width: 100% !important;

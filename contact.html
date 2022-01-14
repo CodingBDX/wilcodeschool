@@ -13,9 +13,10 @@
 </head>
 
 <body>
+    <!-- begin nav -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand text-danger" href="index.html">
                 <img src="images/crown-1740348.svg" alt="logo King's website" width="40" height="34"
                     class="d-inline-block  align-text-top">
                 King's
@@ -38,32 +39,50 @@
             </div>
         </div>
     </nav>
-    <div class="container h3">
-        <h1 class="alert alert-warning">Contact the Royal Kingdom</h1>
+    <!-- end nav -->
+    <!-- begin contact -->
+    <section id="contact">
+        <div class="container h3">
+            <h1 class="alert alert-warning">Contact the Royal Kingdom</h1>
 
-        <form>
-            <div class="mb-3">
-                <label for="NameMail" class="form-label">Name</label>
-                <input type="name" class="form-control" id="exampleInputPassword1">
-            </div>
+            <form>
+                <div class="mb-3">
+                    <label for="NameMail" class="form-label">Name</label>
+                    <input id="NameMail" type="text" class="form-control">
+                </div>
 
-            <div class="mb-3">
-                <label for="Mail" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-            </div>
-            <label for="Message" class="form-label">Message</label>
+                <div class="mb-3">
+                    <label for="Mail" class="form-label">Email address</label>
+                    <input id="Mail" type="email" class="form-control" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <label for="Message" class="form-label">Message</label>
 
-            <div class="form-floating">
-                <textarea style="height: 15em" class="form-control m-2" placeholder="Leave a comment here"
-                    id="floatingTextarea"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-    </div>
+                <div class="form-floating">
+                    <textarea style="height: 15em" class="form-control m-2" placeholder="Leave a comment here"
+                        id="Message"></textarea>
+                </div>
+                <button onclick="AlertContact()" type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#ffd700" fill-opacity="1"
+                d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+    </section>
+    <!-- end section contact -->
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
+<script>
+
+    function AlertContact() {
+
+        alert("Hello it's alert contact!");
+    }
+
+</script>
 
 </html>

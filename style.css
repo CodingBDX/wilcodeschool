@@ -1,0 +1,34 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Roboto:wght@100&display=swap');
+
+body {
+    font-family: 'Bonheur Royale', cursive;
+}
+/* float right button contact */
+.btn {
+    float:right !important;
+    font-size: 1.2em !important;
+}
+/* image size of page the royal family */
+.card-img-top {
+    width: 100% !important;
+    min-height: 100% !important;
+}
+.navbar-brand, .navbar-nav {
+    font-size: 2em!important;
+}
+
+.royalhero {
+    background-image: url("images/pexels-cottonbro-6728579.jpg");
+    background-position: center;
+}
+
+.carousel .carousel-item {
+    max-height:350px;
+}
+
+.carousel-item img {
+    object-fit:cover;
+    max-height:350px;
+}
